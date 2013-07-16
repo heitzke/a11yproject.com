@@ -28,7 +28,7 @@ description: A beginner's guide to web accessibility
 		</style>
 
 		<div class="row-fluid">
-			<form action="" id="simple-a11y-checklist" role="form" class="checklist">
+			<form action="/" data-persist="garlic" method="POST" class="checklist" id="simple-a11y-checklist" role="form">
 
 				<!-- Aria Roles -->
 				<fieldset id="aria-roles">
@@ -49,7 +49,7 @@ description: A beginner's guide to web accessibility
 					<p>Contains navigational links.</p>
 
 					<!-- main -->
-					<label for="main-role" class="checkbox"><code>&lt;section role="main"&gt;</code>
+					<label for="main-role" class="checkbox"><code>&lt;main role="main"&gt;</code>
 						<input name="aria-main-role" id="main-role" type="checkbox">
 					</label>
 
@@ -88,7 +88,7 @@ description: A beginner's guide to web accessibility
 				<fieldset id="forms">
 					<legend>Document Outline</legend>
 					<!-- form document-outline -->
-					<label for="document-outline" class="checkbox">Use semantic headings and strucure
+					<label for="document-outline" class="checkbox">Use semantic headings and structure
 						<input name="document-outline" type="checkbox" id="document-outline">
 					</label>
 				</fieldset>
@@ -152,7 +152,7 @@ description: A beginner's guide to web accessibility
 					<p>(e.g. <code class="language-markup">&lt;label for="name"&gt;Name:&lt;/label&gt;&lt;input id="name" type="text"&gt;</code>)</p>
 
 					<!-- fieldset -->
-					<label for="group-related-elements" class="checkbox">Group related form elements with <code class="language-markup">fieldset</code>
+					<label for="group-related-elements" class="checkbox">Group related form elements with <code class="language-markup">fieldset</code> and describe the group with <code class="language-markup">legend</code>
 						<input name="group-related-elements" type="checkbox" id="group-related-elements">
 					</label>
 
